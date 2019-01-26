@@ -1,0 +1,378 @@
+;=======================================================================
+;  Brother Setup File
+;  Copyright (c)  2018 Brother Industries,LTD.
+;  FileName   :   brpoi16a.inf
+;  Function   :   Port Driver
+;  I/F        :   USB
+;  OS         ;   Windows XP/Vista/7/8/10
+;  Model      :   i16a
+;=======================================================================
+
+[Version]
+Signature = "$Windows NT$"
+Class      = Ports
+ClassGUID  = {4d36e978-e325-11ce-bfc1-08002be10318}
+Provider = %ProviderName%
+DriverPackageType=PlugAndPlay
+DriverPackageDisplayName=%DriverPackageDisplayName%
+DriverVer= 03/20/2018, 01.00.08.08
+CatalogFile=brpoi16a.cat
+
+; ========== Manufacturer/Models sections ===========
+
+[Manufacturer]
+%ProviderName% = BrDrv_WinUSB,NTx86,NTamd64.6.0,NTamd64.5.2,NTx86.6.1,NTamd64.6.1
+
+; XP/Vista 32bit
+[BrDrv_WinUSB.NTx86]
+;M
+"Brother MFC-J6535DW"	=USB_Install, USB\VID_04F9&PID_03E4&MI_02
+"Brother MFC-J3930DW"	=USB_Install, USB\VID_04F9&PID_03E3&MI_02
+"Brother MFC-J3530DW"	=USB_Install, USB\VID_04F9&PID_03E2&MI_02
+"Brother MFC-J6530DW"	=USB_Install, USB\VID_04F9&PID_03E0&MI_02
+"Brother MFC-J6995CDW"	=USB_Install, USB\VID_04F9&PID_03D1&MI_02
+"Brother MFC-J6980CDW"	=USB_Install, USB\VID_04F9&PID_03D0&MI_02
+"Brother MFC-J6580CDW"	=USB_Install, USB\VID_04F9&PID_03CF&MI_02
+"Brother MFC-J6730DW"	=USB_Install, USB\VID_04F9&PID_03CD&MI_02
+"Brother MFC-J6935DW"	=USB_Install, USB\VID_04F9&PID_03CC&MI_02
+"Brother MFC-J6930DW"	=USB_Install, USB\VID_04F9&PID_03CB&MI_02
+;B
+"Brother MFC-J5830DW"	=USB_Install, USB\VID_04F9&PID_03E8&MI_02
+"Brother MFC-J2730DW"	=USB_Install, USB\VID_04F9&PID_03E7&MI_02
+"Brother MFC-J2330DW"	=USB_Install, USB\VID_04F9&PID_03E6&MI_02
+"Brother MFC-J5335DW"	=USB_Install, USB\VID_04F9&PID_03E5&MI_02
+"Brother MFC-J5930DW"	=USB_Install, USB\VID_04F9&PID_03D6&MI_02
+"Brother MFC-J5730DW"	=USB_Install, USB\VID_04F9&PID_03D5&MI_02
+"Brother MFC-J5330DW"	=USB_Install, USB\VID_04F9&PID_03D3&MI_02
+"Brother MFC-J5630CDW"	=USB_Install, USB\VID_04F9&PID_045C&MI_02
+;M17X
+"Brother MFC-J6545DW"=USB_Install, USB\VID_04F9&PID_044F&MI_02
+"Brother MFC-J6945DW"=USB_Install, USB\VID_04F9&PID_0450&MI_02
+"Brother MFC-J6947DW"=USB_Install, USB\VID_04F9&PID_0451&MI_02
+"Brother MFC-J6997CDW"=USB_Install, USB\VID_04F9&PID_0456&MI_02
+"Brother MFC-J6999CDW"=USB_Install, USB\VID_04F9&PID_0457&MI_02
+;B17X
+"Brother MFC-J5945DW"=USB_Install, USB\VID_04F9&PID_044E&MI_02
+"Brother MFC-J5845DW"=USB_Install, USB\VID_04F9&PID_044D&MI_02
+;dash
+"Brother MFC-J6983CDW"=USB_Install, USB\VID_04F9&PID_045E&MI_02
+"Brother MFC-J6583CDW"=USB_Install, USB\VID_04F9&PID_045D&MI_02
+
+
+; Vista 64bit
+[BrDrv_WinUSB.NTamd64.6.0]
+;M
+"Brother MFC-J6535DW"	=USB_Install, USB\VID_04F9&PID_03E4&MI_02
+"Brother MFC-J3930DW"	=USB_Install, USB\VID_04F9&PID_03E3&MI_02
+"Brother MFC-J3530DW"	=USB_Install, USB\VID_04F9&PID_03E2&MI_02
+"Brother MFC-J6530DW"	=USB_Install, USB\VID_04F9&PID_03E0&MI_02
+"Brother MFC-J6995CDW"	=USB_Install, USB\VID_04F9&PID_03D1&MI_02
+"Brother MFC-J6980CDW"	=USB_Install, USB\VID_04F9&PID_03D0&MI_02
+"Brother MFC-J6580CDW"	=USB_Install, USB\VID_04F9&PID_03CF&MI_02
+"Brother MFC-J6730DW"	=USB_Install, USB\VID_04F9&PID_03CD&MI_02
+"Brother MFC-J6935DW"	=USB_Install, USB\VID_04F9&PID_03CC&MI_02
+"Brother MFC-J6930DW"	=USB_Install, USB\VID_04F9&PID_03CB&MI_02
+;B
+"Brother MFC-J5830DW"	=USB_Install, USB\VID_04F9&PID_03E8&MI_02
+"Brother MFC-J2730DW"	=USB_Install, USB\VID_04F9&PID_03E7&MI_02
+"Brother MFC-J2330DW"	=USB_Install, USB\VID_04F9&PID_03E6&MI_02
+"Brother MFC-J5335DW"	=USB_Install, USB\VID_04F9&PID_03E5&MI_02
+"Brother MFC-J5930DW"	=USB_Install, USB\VID_04F9&PID_03D6&MI_02
+"Brother MFC-J5730DW"	=USB_Install, USB\VID_04F9&PID_03D5&MI_02
+"Brother MFC-J5330DW"	=USB_Install, USB\VID_04F9&PID_03D3&MI_02
+"Brother MFC-J5630CDW"	=USB_Install, USB\VID_04F9&PID_045C&MI_02
+;M17X
+"Brother MFC-J6545DW"=USB_Install, USB\VID_04F9&PID_044F&MI_02
+"Brother MFC-J6945DW"=USB_Install, USB\VID_04F9&PID_0450&MI_02
+"Brother MFC-J6947DW"=USB_Install, USB\VID_04F9&PID_0451&MI_02
+"Brother MFC-J6997CDW"=USB_Install, USB\VID_04F9&PID_0456&MI_02
+"Brother MFC-J6999CDW"=USB_Install, USB\VID_04F9&PID_0457&MI_02
+;B17X
+"Brother MFC-J5945DW"=USB_Install, USB\VID_04F9&PID_044E&MI_02
+"Brother MFC-J5845DW"=USB_Install, USB\VID_04F9&PID_044D&MI_02
+;dash
+"Brother MFC-J6983CDW"=USB_Install, USB\VID_04F9&PID_045E&MI_02
+"Brother MFC-J6583CDW"=USB_Install, USB\VID_04F9&PID_045D&MI_02
+
+; XPx64 
+[BrDrv_WinUSB.NTamd64.5.2]
+;M
+"Brother MFC-J6535DW Remote Setup Port"		=BROTHER.USB.SERIAL, USB\VID_04F9&PID_03E4&MI_02
+"Brother MFC-J3930DW Remote Setup Port"		=BROTHER.USB.SERIAL, USB\VID_04F9&PID_03E3&MI_02
+"Brother MFC-J3530DW Remote Setup Port"		=BROTHER.USB.SERIAL, USB\VID_04F9&PID_03E2&MI_02
+"Brother MFC-J6530DW Remote Setup Port"		=BROTHER.USB.SERIAL, USB\VID_04F9&PID_03E0&MI_02
+"Brother MFC-J6995CDW Remote Setup Port"	=BROTHER.USB.SERIAL, USB\VID_04F9&PID_03D1&MI_02
+"Brother MFC-J6980CDW Remote Setup Port"	=BROTHER.USB.SERIAL, USB\VID_04F9&PID_03D0&MI_02
+"Brother MFC-J6580CDW Remote Setup Port"	=BROTHER.USB.SERIAL, USB\VID_04F9&PID_03CF&MI_02
+"Brother MFC-J6730DW Remote Setup Port"		=BROTHER.USB.SERIAL, USB\VID_04F9&PID_03CD&MI_02
+"Brother MFC-J6935DW Remote Setup Port"		=BROTHER.USB.SERIAL, USB\VID_04F9&PID_03CC&MI_02
+"Brother MFC-J6930DW Remote Setup Port"		=BROTHER.USB.SERIAL, USB\VID_04F9&PID_03CB&MI_02
+;B
+"Brother MFC-J5830DW Remote Setup Port"		=BROTHER.USB.SERIAL, USB\VID_04F9&PID_03E8&MI_02
+"Brother MFC-J2730DW Remote Setup Port"		=BROTHER.USB.SERIAL, USB\VID_04F9&PID_03E7&MI_02
+"Brother MFC-J2330DW Remote Setup Port"		=BROTHER.USB.SERIAL, USB\VID_04F9&PID_03E6&MI_02
+"Brother MFC-J5335DW Remote Setup Port"		=BROTHER.USB.SERIAL, USB\VID_04F9&PID_03E5&MI_02
+"Brother MFC-J5930DW Remote Setup Port"		=BROTHER.USB.SERIAL, USB\VID_04F9&PID_03D6&MI_02
+"Brother MFC-J5730DW Remote Setup Port"		=BROTHER.USB.SERIAL, USB\VID_04F9&PID_03D5&MI_02
+"Brother MFC-J5330DW Remote Setup Port"		=BROTHER.USB.SERIAL, USB\VID_04F9&PID_03D3&MI_02
+"Brother MFC-J5630CDW Remote Setup Port"	=BROTHER.USB.SERIAL, USB\VID_04F9&PID_045C&MI_02
+;M17X
+"Brother MFC-J6545DW Remote Setup Port"=BROTHER.USB.SERIAL, USB\VID_04F9&PID_044F&MI_02
+"Brother MFC-J6945DW Remote Setup Port"=BROTHER.USB.SERIAL, USB\VID_04F9&PID_0450&MI_02
+"Brother MFC-J6947DW Remote Setup Port"=BROTHER.USB.SERIAL, USB\VID_04F9&PID_0451&MI_02
+"Brother MFC-J6997CDW Remote Setup Port"=BROTHER.USB.SERIAL, USB\VID_04F9&PID_0456&MI_02
+"Brother MFC-J6999CDW Remote Setup Port"=BROTHER.USB.SERIAL, USB\VID_04F9&PID_0457&MI_02
+;B17X
+"Brother MFC-J5945DW Remote Setup Port"=BROTHER.USB.SERIAL, USB\VID_04F9&PID_044E&MI_02
+"Brother MFC-J5845DW Remote Setup Port"=BROTHER.USB.SERIAL, USB\VID_04F9&PID_044D&MI_02
+;dash
+"Brother MFC-J6983CDW Remote Setup Port"=BROTHER.USB.SERIAL, USB\VID_04F9&PID_045E&MI_02
+"Brother MFC-J6583CDW Remote Setup Port"=BROTHER.USB.SERIAL, USB\VID_04F9&PID_045D&MI_02
+
+
+; Windows 7/8 or later 32bit
+[BrDrv_WinUSB.NTx86.6.1]
+;M
+"Brother MFC-J6535DW"	=USB_Install1009, USB\VID_04F9&PID_03E4&MI_02
+"Brother MFC-J3930DW"	=USB_Install1009, USB\VID_04F9&PID_03E3&MI_02
+"Brother MFC-J3530DW"	=USB_Install1009, USB\VID_04F9&PID_03E2&MI_02
+"Brother MFC-J6530DW"	=USB_Install1009, USB\VID_04F9&PID_03E0&MI_02
+"Brother MFC-J6995CDW"	=USB_Install1009, USB\VID_04F9&PID_03D1&MI_02
+"Brother MFC-J6980CDW"	=USB_Install1009, USB\VID_04F9&PID_03D0&MI_02
+"Brother MFC-J6580CDW"	=USB_Install1009, USB\VID_04F9&PID_03CF&MI_02
+"Brother MFC-J6730DW"	=USB_Install1009, USB\VID_04F9&PID_03CD&MI_02
+"Brother MFC-J6935DW"	=USB_Install1009, USB\VID_04F9&PID_03CC&MI_02
+"Brother MFC-J6930DW"	=USB_Install1009, USB\VID_04F9&PID_03CB&MI_02
+;B
+"Brother MFC-J5830DW"	=USB_Install1009, USB\VID_04F9&PID_03E8&MI_02
+"Brother MFC-J2730DW"	=USB_Install1009, USB\VID_04F9&PID_03E7&MI_02
+"Brother MFC-J2330DW"	=USB_Install1009, USB\VID_04F9&PID_03E6&MI_02
+"Brother MFC-J5335DW"	=USB_Install1009, USB\VID_04F9&PID_03E5&MI_02
+"Brother MFC-J5930DW"	=USB_Install1009, USB\VID_04F9&PID_03D6&MI_02
+"Brother MFC-J5730DW"	=USB_Install1009, USB\VID_04F9&PID_03D5&MI_02
+"Brother MFC-J5330DW"	=USB_Install1009, USB\VID_04F9&PID_03D3&MI_02
+"Brother MFC-J5630CDW"	=USB_Install1009, USB\VID_04F9&PID_045C&MI_02
+;M17X
+"Brother MFC-J6545DW"=USB_Install1009, USB\VID_04F9&PID_044F&MI_02
+"Brother MFC-J6945DW"=USB_Install1009, USB\VID_04F9&PID_0450&MI_02
+"Brother MFC-J6947DW"=USB_Install1009, USB\VID_04F9&PID_0451&MI_02
+"Brother MFC-J6997CDW"=USB_Install1009, USB\VID_04F9&PID_0456&MI_02
+"Brother MFC-J6999CDW"=USB_Install1009, USB\VID_04F9&PID_0457&MI_02
+;B17X
+"Brother MFC-J5945DW"=USB_Install1009, USB\VID_04F9&PID_044E&MI_02
+"Brother MFC-J5845DW"=USB_Install1009, USB\VID_04F9&PID_044D&MI_02
+;dash
+"Brother MFC-J6983CDW"=USB_Install1009, USB\VID_04F9&PID_045E&MI_02
+"Brother MFC-J6583CDW"=USB_Install1009, USB\VID_04F9&PID_045D&MI_02
+
+; Windows 7/8 or later 64bit
+[BrDrv_WinUSB.NTamd64.6.1]
+;M
+"Brother MFC-J6535DW"	=USB_Install1009, USB\VID_04F9&PID_03E4&MI_02
+"Brother MFC-J3930DW"	=USB_Install1009, USB\VID_04F9&PID_03E3&MI_02
+"Brother MFC-J3530DW"	=USB_Install1009, USB\VID_04F9&PID_03E2&MI_02
+"Brother MFC-J6530DW"	=USB_Install1009, USB\VID_04F9&PID_03E0&MI_02
+"Brother MFC-J6995CDW"	=USB_Install1009, USB\VID_04F9&PID_03D1&MI_02
+"Brother MFC-J6980CDW"	=USB_Install1009, USB\VID_04F9&PID_03D0&MI_02
+"Brother MFC-J6580CDW"	=USB_Install1009, USB\VID_04F9&PID_03CF&MI_02
+"Brother MFC-J6730DW"	=USB_Install1009, USB\VID_04F9&PID_03CD&MI_02
+"Brother MFC-J6935DW"	=USB_Install1009, USB\VID_04F9&PID_03CC&MI_02
+"Brother MFC-J6930DW"	=USB_Install1009, USB\VID_04F9&PID_03CB&MI_02
+;B
+"Brother MFC-J5830DW"	=USB_Install1009, USB\VID_04F9&PID_03E8&MI_02
+"Brother MFC-J2730DW"	=USB_Install1009, USB\VID_04F9&PID_03E7&MI_02
+"Brother MFC-J2330DW"	=USB_Install1009, USB\VID_04F9&PID_03E6&MI_02
+"Brother MFC-J5335DW"	=USB_Install1009, USB\VID_04F9&PID_03E5&MI_02
+"Brother MFC-J5930DW"	=USB_Install1009, USB\VID_04F9&PID_03D6&MI_02
+"Brother MFC-J5730DW"	=USB_Install1009, USB\VID_04F9&PID_03D5&MI_02
+"Brother MFC-J5330DW"	=USB_Install1009, USB\VID_04F9&PID_03D3&MI_02
+"Brother MFC-J5630CDW"	=USB_Install1009, USB\VID_04F9&PID_045C&MI_02
+;M17X
+"Brother MFC-J6545DW"=USB_Install1009, USB\VID_04F9&PID_044F&MI_02
+"Brother MFC-J6945DW"=USB_Install1009, USB\VID_04F9&PID_0450&MI_02
+"Brother MFC-J6947DW"=USB_Install1009, USB\VID_04F9&PID_0451&MI_02
+"Brother MFC-J6997CDW"=USB_Install1009, USB\VID_04F9&PID_0456&MI_02
+"Brother MFC-J6999CDW"=USB_Install1009, USB\VID_04F9&PID_0457&MI_02
+;B17X
+"Brother MFC-J5945DW"=USB_Install1009, USB\VID_04F9&PID_044E&MI_02
+"Brother MFC-J5845DW"=USB_Install1009, USB\VID_04F9&PID_044D&MI_02
+;dash
+"Brother MFC-J6983CDW"=USB_Install1009, USB\VID_04F9&PID_045E&MI_02
+"Brother MFC-J6583CDW"=USB_Install1009, USB\VID_04F9&PID_045D&MI_02
+
+; =================== Installation ===================
+
+;[1]
+[USB_Install]
+Include=winusb.inf
+Needs=WINUSB.NT
+AddReg=USB_Install_Reg
+
+;[1']
+[USB_Install1009]
+Include=winusb.inf
+Needs=WINUSB.NT
+AddReg=USB_Install_Reg
+
+;-----------------------------------------
+;[XP64]
+;Start
+
+[BROTHER.USB.SERIAL]
+CopyFiles=BROTHER.USB.SERIAL.CopyFiles
+PreFixLength=8
+PostFixLength=18
+
+[BROTHER.USB.SERIAL.Services]
+Addservice = BrSerIb , 0x00000002, BrSerIb.AddService
+Addservice = BrUsbSIb, 0x00000000, BrUsbSIb.AddService
+
+[BROTHER.USB.SERIAL.HW]
+AddReg=BROTHER.USB.SERIAL.AddReg.HW
+
+[BROTHER.USB.SERIAL.CopyFiles]
+BrSerIb.sys
+BrUsbSib.sys
+
+[BROTHER.USB.SERIAL.CoInstallers]
+AddReg=BrCoInstaller_AddReg
+CopyFiles=BrCoInstaller.CopyFiles
+
+[BROTHER.USB.SERIAL.AddReg.HW]
+HKR,,"LowerFilters", 0x00010000, "BrUsbSIb"
+
+[BrSerIb.AddService]
+DisplayName    = %BrSerIb.SvcDesc%
+ServiceType    = 1                  ; SERVICE_KERNEL_DRIVER
+StartType      = 3                  ; SERVICE_DEMAND_START
+ErrorControl   = 1                  ; SERVICE_ERROR_NORMAL
+ServiceBinary  = %12%\BrSerIb.sys
+
+[BrUsbSIb.AddService]
+DisplayName    = %BrUsbSIb.SvcDesc%
+ServiceType    = 1                  ; SERVICE_KERNEL_DRIVER
+StartType      = 3                  ; SERVICE_DEMAND_START
+ErrorControl   = 1                  ; SERVICE_ERROR_NORMAL
+ServiceBinary  = %12%\BrUsbSIb.sys
+
+[BrCoInstaller.CopyFiles]
+brciser.dll
+
+[BrCoInstaller_AddReg]
+HKR,,CoInstallers32,0x00010000,"brciser.dll,BrmfcSerCoInstaller"
+
+[DestinationDirs]
+DefaultDestDir = 12
+BrCoInstaller.CopyFiles = 11
+CoInstallers_CopyFiles=11
+
+
+[SourceDisksNames.amd64]
+3 = %BrDrvDisk1%,,,amd64
+
+;[XP64]
+;End
+;-----------------------------------------
+
+[USB_Install_Reg]
+HKR,,PortSubClassOther,1,01
+
+;[2]
+[USB_Install.Services]
+Include=winusb.inf
+AddService=WinUSB,0x00000002,WinUSB_ServiceInstall
+
+[USB_Install1009.Services]
+Include=winusb.inf
+AddService=WinUSB,0x00000002,WinUSB_ServiceInstall
+
+;[3]
+[WinUSB_ServiceInstall]
+DisplayName     = %BrDrv_SvcDesc%
+ServiceType     = 1
+StartType       = 3
+ErrorControl    = 1
+ServiceBinary   = %12%\WinUSB.sys
+
+;[4]
+[USB_Install.Wdf]
+KmdfService=WINUSB, WinUsb_Install
+
+[USB_Install1009.Wdf]
+KmdfService=WINUSB, WinUsb_Install1009
+
+
+[WinUSB_Install]
+KmdfLibraryVersion=1.5
+
+[WinUSB_Install1009]
+KmdfLibraryVersion=1.9
+
+;[5]
+[USB_Install.HW]
+AddReg=Dev_AddReg
+
+[USB_Install1009.HW]
+AddReg=Dev_AddReg
+
+[Dev_AddReg]
+HKR,,DeviceInterfaceGUIDs,0x10000,"{1EA0A2DA-6162-41EA-861A-E840C3FFF0E2}"
+
+;[6]
+[USB_Install.CoInstallers]
+AddReg=CoInstallers_AddReg
+CopyFiles=CoInstallers_CopyFiles
+
+[USB_Install1009.CoInstallers]
+AddReg=CoInstallers1009_AddReg
+CopyFiles=CoInstallers1009_CopyFiles
+
+[CoInstallers_AddReg]
+HKR,,CoInstallers32,0x00010000,"WdfCoInstaller01005.dll,WdfCoInstaller","WinUSBCoInstaller.dll"
+
+[CoInstallers_CopyFiles]
+WinUSBCoInstaller.dll
+WdfCoInstaller01005.dll
+
+[CoInstallers1009_AddReg]
+HKR,,CoInstallers32,0x00010000,"WdfCoInstaller01009.dll","WdfCoInstaller","WinUSBCoInstaller2.dll"
+
+[CoInstallers1009_CopyFiles]
+WinUSBCoInstaller2.dll
+WdfCoInstaller01009.dll
+
+; ================= Source Media Section =====================
+;[7]
+
+[SourceDisksNames]
+1 = %DISK_NAME%,,,\x86
+2 = %DISK_NAME%,,,\amd64
+
+[SourceDisksFiles.x86]
+WinUSBCoInstaller.dll=1
+WdfCoInstaller01005.dll=1
+WinUSBCoInstaller2.dll=1
+WdfCoInstaller01009.dll=1
+
+[SourceDisksFiles.amd64]
+WinUSBCoInstaller.dll=2
+WdfCoInstaller01005.dll=2
+WinUSBCoInstaller2.dll=2
+WdfCoInstaller01009.dll=2
+BrSerIb.sys=3
+BrUsbSib.sys=3
+brciser.dll=3
+
+
+
+; =================== Strings ===================
+
+[Strings]
+ProviderName="Brother"
+BrDrv_SvcDesc="Brother WinUSB Port Driver"
+DISK_NAME="Install Disk"
+DriverPackageDisplayName="MFC-J6535DW,MFC-J3930DW,MFC-J3530DW,MFC-J6530DW,MFC-J6995CDW,MFC-J6980CDW,MFC-J6580CDW,MFC-J6730DW,MFC-J6935DW,MFC-J6930DW,MFC-J5830DW,MFC-J2730DW,MFC-J2330DW,MFC-J5335DW,MFC-J5930DW,MFC-J5730DW,MFC-J5330DW,MFC-J5630CDW,MFC-J6545DW,MFC-J6945DW,MFC-J6947DW,MFC-J6997CDW,MFC-J6999CDW,MFC-J5845DW,MFC-J5945DW,MFC-J6983CDW,MFC-J6583CDW"
+
+BrSerIb.SvcDesc = "Brother Serial Interface Driver(WDM)"
+BrUsbSIb.SvcDesc = "Brother Serial USB Driver(WDM)"
+BrDrvDisk1 = "Brother Driver Disk"
